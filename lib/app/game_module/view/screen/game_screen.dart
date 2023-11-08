@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:get/get_utils/get_utils.dart';
-import 'package:ludo_app/ludo_provider.dart';
-import 'package:ludo_app/widgets/board_widget.dart';
-import 'package:ludo_app/widgets/dice_widget.dart';
-import 'package:provider/provider.dart';
+import 'package:ludo_app/app/game_module/controller/ludo_controller.dart';
+import 'package:ludo_app/app/game_module/view/widgets/board_widget.dart';
+import 'package:ludo_app/app/game_module/view/widgets/dice_widget.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

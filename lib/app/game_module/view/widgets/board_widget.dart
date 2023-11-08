@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:ludo_app/constants.dart';
-import 'package:ludo_app/ludo_provider.dart';
-import 'package:ludo_app/widgets/pawn_widget.dart';
-import 'package:provider/provider.dart';
-
-import '../ludo_player.dart';
+import 'package:ludo_app/app/game_module/controller/ludo_controller.dart';
+import 'package:ludo_app/app/game_module/view/widgets/pawn_widget.dart';
+import 'package:ludo_app/utils/constants.dart';
+import 'package:ludo_app/utils/ludo_player.dart';
 
 ///Widget for the board
 class BoardWidget extends StatefulWidget {
@@ -49,7 +47,7 @@ class _BoardWidgetState extends State<BoardWidget> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(40),
         image: const DecorationImage(
-          image: AssetImage("assets/images/board.png"),
+          image: AssetImage("assets/images/board2.jpg"),
           fit: BoxFit.cover,
           alignment: Alignment.topCenter,
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ludo_app/constants.dart';
-import 'package:ludo_app/widgets/pawn_widget.dart';
+import 'package:ludo_app/app/game_module/view/widgets/pawn_widget.dart';
+import 'package:ludo_app/utils/constants.dart';
 
 ///This is ludo player model class which contains all the information about the player
 class LudoPlayer {

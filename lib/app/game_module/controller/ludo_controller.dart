@@ -1,11 +1,8 @@
 import 'dart:math';
-
-import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:ludo_app/ludo_player.dart';
-
-import 'audio.dart';
-import 'constants.dart';
+import 'package:ludo_app/utils/audio.dart';
+import 'package:ludo_app/utils/constants.dart';
+import 'package:ludo_app/utils/ludo_player.dart';
 
 class LudoController extends GetxController {
   ///Flags to check if pawn is moving
@@ -292,5 +289,21 @@ class LudoController extends GetxController {
   playAgain() {
     winners.clear();
     _gameState = LudoGameState.throwDice;
+
+    ///Flags to check if pawn is moving
+    _isMoving = false;
+
+    ///Flags to stop pawn once disposed
+    _stopMoving = false;
+
+    _gameState = LudoGameState.throwDice;
+
+    ///Game state to check if the game is in throw dice state or pick pawn state
+
+    _currentTurn = LudoPlayerType.green;
+
+    _diceResult = 0;
+
+    _diceStarted = false;
   }
 }

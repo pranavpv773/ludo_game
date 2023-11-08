@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_state_manager/src/simple/get_state.dart';
-import 'package:ludo_app/constants.dart';
-import 'package:ludo_app/ludo_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:ludo_app/app/game_module/controller/ludo_controller.dart';
+import 'package:ludo_app/utils/constants.dart';
 import 'package:simple_ripple_animation/simple_ripple_animation.dart';
 
 ///Widget for the dice

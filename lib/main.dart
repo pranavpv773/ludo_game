@@ -1,31 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:ludo_app/main_screen.dart';
-import 'package:provider/provider.dart';
-
-import 'ludo_provider.dart';
-
-// main() {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   return runApp(const Root());
-// }
-
-// class Root extends StatelessWidget {
-//   const Root({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MultiProvider(
-//       providers: [
-//         ChangeNotifierProvider<LudoProvider>(
-//             create: (context) => LudoProvider()),
-//       ],
-//       child: const MaterialApp(
-//         home: MainScreen(),
-//       ),
-//     );
-//   }
-// }
+import 'package:ludo_app/app/splash/view/splash_view.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,10 +20,10 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(backgroundColor: Color(0xff202020)),
         scaffoldBackgroundColor: const Color(0xff202020),
       ),
-      title: 'E-win',
+      title: 'LUDO',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }
